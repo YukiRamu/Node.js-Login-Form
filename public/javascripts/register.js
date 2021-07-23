@@ -9,7 +9,6 @@ const signUp = () => {
 };
 
 createBtn.addEventListener("click", (e) => {
-  console.log("hi")
   e.preventDefault();
   //validation check
   (emailInput.value === "" || passwordInput.value === "") ?
