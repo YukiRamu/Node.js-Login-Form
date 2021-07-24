@@ -38,7 +38,10 @@ const server = http.createServer((req, res) => {
     case true:
       fs.readFile(`./views${requestURL}`, (error, data) => {
         if (error) {
-          throw error;
+          //404 page
+          fs.readFile("./views/error.html", (error, data) => {
+            showData(res, requestURL, data);
+          });
         } else {
           showData(res, requestURL, data);
         }
@@ -48,7 +51,12 @@ const server = http.createServer((req, res) => {
     case false:
       fs.readFile(`.${requestURL}`, (error, data) => {
         if (error) {
-          throw error;
+          //404 page
+          fs.readFile("./views/error.html", (error, data) => {
+            res.writeHead(200, { "Content-Type": "text/html" });
+            res.write(data);
+            res.end();
+          });
         } else {
           showData(res, requestURL, data);
         }
