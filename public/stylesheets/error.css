@@ -1,0 +1,42 @@
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: "Philosopher", sans-serif !important;
+}
+
+body a {
+  color: white;
+  text-decoration: none;
+}
+
+body a:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  color: lightseagreen;
+  border-bottom: white solid 0.1rem;
+}
+
+body button {
+  background-color: transparent;
+  padding: 1rem 1.5rem;
+  border: 0.1rem solid white;
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Philosopher", sans-serif !important;
+}
+
+body button:hover {
+  background-color: white;
+  color: lightseagreen;
+}
+
+body {
+  background: url(../images/bg2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*# sourceMappingURL=error.css.map */

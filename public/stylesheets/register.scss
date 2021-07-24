@@ -1,0 +1,46 @@
+@import "./global";
+
+body {
+  background: url(../images/bg2.jpg);
+  @include background;
+  .container {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+      rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    height: 70%;
+    h1 {
+      font-size: 2rem;
+    }
+    .registerForm {
+      width: 70%;
+      margin-bottom: 1rem;
+      .form-label {
+        display: block;
+        text-align: left;
+      }
+      .createBtn {
+        text-align: right;
+        background-color: transparent;
+        padding: 0.5rem 1.5rem;
+        margin-top: 0.5rem;
+        border: 0.1rem solid white;
+        font-family: "Philosopher", sans-serif !important;
+        border-radius: unset;
+        &:hover {
+          background-color: $whiteTR;
+          border: 0.1rem solid lightseagreen;
+          color: black;
+        }
+      }
+    }
+  }
+}

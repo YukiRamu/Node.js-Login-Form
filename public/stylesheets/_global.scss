@@ -1,0 +1,40 @@
+$whiteTR: rgba(255, 255, 255, 0.779);
+$blackTR: rgba(0, 0, 0, 0.531);
+
+@mixin background {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // backdrop-filter: blur(3px);
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: "Philosopher", sans-serif !important;
+  a {
+    color: white;
+    text-decoration: none;
+    &:hover {
+      transform: scale(1.5);
+      color: lightseagreen;
+      border-bottom: white solid 0.1rem;
+    }
+  }
+
+  button {
+    background-color: transparent;
+    padding: 1rem 1.5rem;
+    border: 0.1rem solid white;
+    color: white;
+    font-size: 1.5rem;
+    font-family: "Philosopher", sans-serif !important;
+    &:hover {
+      background-color: white;
+      color: lightseagreen;
+    }
+  }
+}

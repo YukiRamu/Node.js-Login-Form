@@ -1,0 +1,98 @@
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: "Philosopher", sans-serif !important;
+}
+
+body a {
+  color: white;
+  text-decoration: none;
+}
+
+body a:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  color: lightseagreen;
+  border-bottom: white solid 0.1rem;
+}
+
+body button {
+  background-color: transparent;
+  padding: 1rem 1.5rem;
+  border: 0.1rem solid white;
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Philosopher", sans-serif !important;
+}
+
+body button:hover {
+  background-color: white;
+  color: lightseagreen;
+}
+
+body {
+  background: url(../images/bg2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .container {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 0;
+  height: 70%;
+}
+
+body .container h1 {
+  font-size: 2rem;
+}
+
+body .container .registerForm {
+  width: 70%;
+  margin-bottom: 1rem;
+}
+
+body .container .registerForm .form-label {
+  display: block;
+  text-align: left;
+}
+
+body .container .registerForm .createBtn {
+  text-align: right;
+  background-color: transparent;
+  padding: 0.5rem 1.5rem;
+  margin-top: 0.5rem;
+  border: 0.1rem solid white;
+  font-family: "Philosopher", sans-serif !important;
+  border-radius: unset;
+}
+
+body .container .registerForm .createBtn:hover {
+  background-color: rgba(255, 255, 255, 0.779);
+  border: 0.1rem solid lightseagreen;
+  color: black;
+}
+/*# sourceMappingURL=register.css.map */
