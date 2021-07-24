@@ -16,7 +16,7 @@ const getFileType = (url) => {
       return fileType[key];
     };
   }
-  return "text/html"; //error.html
+  return "text/html"; //for error.html
 };
 
 const showData = (res, reqURL, data) => {
@@ -166,6 +166,17 @@ const server = http.createServer((req, res) => {
     case "/public/images/bg.jpg":
       //read bg image
       fs.readFile("./public/images/bg.jpg", (error, data) => {
+        if (error) {
+          throw error;
+        } else {
+          showData(res, requestURL, data);
+        }
+      });
+      break;
+
+    case "/public/icon.jpg":
+      //read bg image
+      fs.readFile("./public/icon.jpg", (error, data) => {
         if (error) {
           throw error;
         } else {
