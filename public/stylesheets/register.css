@@ -95,4 +95,13 @@ body .container .registerForm .createBtn:hover {
   border: 0.1rem solid lightseagreen;
   color: black;
 }
+
+body .container a {
+  color: black;
+  margin-right: 1rem;
+}
+
+body .container a:hover {
+  color: lightseagreen;
+}
 /*# sourceMappingURL=register.css.map */

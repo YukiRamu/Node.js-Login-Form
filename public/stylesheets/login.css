@@ -98,6 +98,7 @@ body .container .loginForm .loginBtn:hover {
 
 body .container a {
   color: black;
+  margin-right: 1rem;
 }
 
 body .container a:hover {
